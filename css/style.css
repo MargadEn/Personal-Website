@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+:root{
+    --primary-color: #00ffbb;
+    --secondary-color: #111518;
+    --light-color: #ddd;
+    --white-color: #fff;
+    --gray: #b3b6b7;
+    --light-dark: #181c1f;
+}
+
+html{
+    font-size: 80%;
+    scroll-behavior: smooth !important;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+/*Utality classes start*/
+body{
+    background: var(--light-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.primary_btn:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 70px;
+}
+/*Utality classes close*/
+
+/*Header start*/
+header{
+    background: url(/imgs/Header2.gif) no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+header img{
+    width: 50%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav{
+    display: flex;
+}
+
+.navbar nav li{
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+.navbar nav li a{
+    color: var(--light-dark);
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar nav li a:hover{
+    color: var(--primary-color);
+}
+
+.navbar .btn{
+    color: var(--gray);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*showcase start*/
+#showcase .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 80vh;
+    align-items: center;
+}
+
+#showcase .showcase-content{
+    color: var(--white-color);
+    width: 100%;
+}
+
+#showcase p{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    line-height: 1.5;
+}
+
+#showcase h2{
+    font-size: 4rem;
+    font-weight: 800;
+}
+/*showcase close*/
+
+/*Header close*/
+
+/*About start*/
+#about h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ddd;
+    text-align: center;
+    padding: 2em 0;
+}
+
+#about p{
+    text-align: justify;
+}
+
+#about{
+    padding: 10rem 0;
+    background-color: #111518;
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+.about_content h3{
+    font-size: 5rem;
+}
+
+.about_content text{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.pro_left_side{
+    background: var(--white-color);
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.pro_left_side:hover{
+    background: #008000;
+    color: var(--white-color);
+}
+
+.pro_left_side img{
+    display: block;
+    object-fit: cover;
+}
+
+.pro_right_side{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4rem;
+}
+
+.pro_right_side .abouts{
+    background: var(--white-color);
+    padding: 4rem;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.pro_right_side .abouts:first-child{
+    grid-column: 1/3;
+    transition: all 0.5s ease-in-out;
+}
+
+.pro_right_side .abouts:first-child:hover{
+    background: #FF0000;
+    color: var(--white-color);
+}
+
+.pro_right_side .abouts:nth-child(2):hover{
+    background: #ffae00;
+    color: var(--white-color);
+}
+
+.pro_right_side .abouts:nth-child(3):hover{
+    background: #0000ff;
+    color: var(--white-color);
+}
+
+.pro_right_side img{
+    width: 80%;
+    margin: 0 auto;
+}
+/*About close*/
+
+/*Skills start*/
+#skills h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--light-dark);
+    text-align: center;
+}
+
+#skills{
+    background: url(/imgs/skill_back.webp) no-repeat center center/cover;
+    padding: 2rem 0;
+}
+
+.skill_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+
+.skill_content_boxes{
+    padding: 4rem;
+    background: var(--white-color);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill_content_boxes h3{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.skill_content_boxes p{
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+.skill_content_boxes:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/*Skills close*/
+
+/*University start*/
+#university h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--white-color);
+    text-align: center;
+}
+
+#university{
+    padding: 10rem 0;
+    background: #111518;
+}
+
+.university_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 10px;
+    align-items: center;
+    background: linear-gradient(to right, #008000, rgb(0,0,0));
+    grid-gap: 4rem;
+}
+
+#university .university_content{
+    padding: 6rem;
+}
+
+#university .university_content img{
+    display: block;
+    width: 80%;
+    margin-right: auto;
+}
+
+#university .university_content h2{
+    font-size: 5rem;
+    color: var(--white-color);
+    font-weight: 800;
+}
+
+#university .university_content p{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 2rem 0;
+    text-align: justify;
+}
+/*University close*/
+
+/*Portfolio start*/
+#portfolio{
+    padding: 4em 0;
+    background: var(--secondary-color);
+}
+
+.outside_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.outside_content h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.outside_content p{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.portfolio_contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pro_box{
+    border: 1px solid var(--gray);
+}
+
+.pro_box img{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.pro_box h2{
+    color: var(--white-color);
+    padding-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.pro_box p{
+    color: var(--white-color);
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.pro_box img:hover{
+    transform: scale(0.9);
+}
+/*Portfolio close*/
+
+/*Contact start*/
+#contact .title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3.8rem;
+    padding-bottom: 3.8rem;
+    position: relative;
+}
+
+#contact .title::before{
+    content: "";
+    width: 15rem;
+    height: 4px;
+    background: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+}
+
+#contact .contact_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+#contact .contact_container h3{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+#contact .contact_container .contact_content > p{
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+    line-height: 1.8;
+}
+
+#contact .contact_info{
+    display: flex;
+}
+
+#contact .contact_info i{
+    font-size: 1.8rem;
+    color: #008000;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+#contact .contact_info span{
+    font-size: 1.2rem;
+    color: #797d7f;
+}
+
+#contact .contact_info p{
+    font-size: 1.1rem;
+}
+
+#contact .contact_form input,textarea{
+    width: 100%;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+#contact .contact_form button{
+    margin-top: 1rem 0;
+    padding: 0.7rem 0.7rem;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    background: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+}
+
+#contact .contact_form button:hover{
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+/*Contact close*/
+
+.footer {
+    text-align: center;
+    padding: 4em 0;
+}
+
+.footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    justify-content: center;
+}
+
+.footer .col-lg-4 {
+    font-size: 1.5em;
+    padding: 0.5em 0;
+}
+
+.footer .btn-social {
+    font-size: 1.5em;
+    margin: 0.2em;
+}
